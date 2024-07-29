@@ -261,100 +261,71 @@ export const QUIZZES = [
     ],
   },
   {
-    title: "Accessibility",
-    icon: "./icons/icon-accessibility.svg",
+    title: "React",
+    icon: "./icons/icon-react.svg",
     questions: [
       {
-        question: "What does 'WCAG' stand for?",
+        question:
+          "Which syntax can be used to output dynamic values / JavaScript expressions in JSX?",
         options: [
-          "Web Content Accessibility Guidelines",
-          "Web Compliance Accessibility Guide",
-          "Web Content Accessibility Goals",
-          "Website Compliance and Accessibility Guidelines",
+          "[ ] (Square brackets)",
+          "( ) (Parentheses)",
+          "{ } (Curly braces)",
+          "{{ }} (Double curly braces)",
         ],
-        answer: "Web Content Accessibility Guidelines",
+        answer: "{ } (Curly braces)",
       },
       {
         question:
-          "Which element is used to provide alternative text for images for screen reader users?",
+          "Which values can be output as dynamic values in JSX (i.e., between curly braces)?",
         options: [
-          "<alt>",
-          "<figcaption>",
-          "<description>",
-          "<img alt='description'>",
+          "Any valid JavaScript statement",
+          "Any valid React template instruction",
+          "Any valid JavaScript expression",
+          "Any valid React template expression",
         ],
-        answer: "<img alt='description'>",
-      },
-      {
-        question: "What does ARIA stand for in web development?",
-        options: [
-          "Accessible Rich Internet Applications",
-          "Advanced Responsive Internet Assistance",
-          "Accessible Responsive Internet Applications",
-          "Automated Responsive Internet Actions",
-        ],
-        answer: "Accessible Rich Internet Applications",
-      },
-      {
-        question: "Which of the following is not a principle of the WCAG?",
-        options: ["Perceivable", "Dependable", "Operable", "Understandable"],
-        answer: "Dependable",
+        answer: "Any valid JavaScript expression",
       },
       {
         question:
-          "Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?",
-        options: ["3:1", "4.5:1", "7:1", "2:1"],
-        answer: "4.5:1",
-      },
-      {
-        question:
-          "Which of the following elements is inherently focusable, meaning it can receive focus without a 'tabindex' attribute?",
-        options: ["<div>", "<span>", "<a href='...'>", "<p>"],
-        answer: "<a href='...'>",
-      },
-      {
-        question:
-          "What is the purpose of the 'lang' attribute in an HTML page?",
+          "How should you typically load / use images in React projects?",
         options: [
-          "To specify the scripting language",
-          "To define the character set",
-          "To indicate the language of the page content",
-          "To declare a language pack",
+          "Set the <img> src equal to a relative string path to the image",
+          "Set the <img> src equal to the path generated via an import statement (that points at the image)",
+          "Set the <img> src equal to an absolute string path to the image",
+          "Set the <img> src equal to the image itself",
         ],
-        answer: "To indicate the language of the page content",
+        answer:
+          "Set the <img> src equal to the path generated via an import statement (that points at the image)",
       },
       {
         question:
-          "Which guideline ensures that content is accessible by keyboard as well as by mouse?",
+          "How can you assign a dynamic value to an HTML element attribute?",
         options: [
-          "Keyboard Accessible",
-          "Mouse Independence",
-          "Device Independence",
-          "Operable Controls",
+          "Via the same syntax you use for dynamic values in JSX in general: Curly braces",
+          "Via the special React attribute directive that can be added to all built-in and custom components",
+          "Via the same syntax you use for attributes in general: You set the value as a hard-coded string",
+          "Via the special React template attribute syntax that allows you to store dynamic values for attributes",
         ],
-        answer: "Keyboard Accessible",
+        answer:
+          "Via the same syntax you use for dynamic values in JSX in general: Curly braces",
       },
       {
         question:
-          "What is the role of 'skip navigation' links in web accessibility?",
-        options: [
-          "To skip over primary navigation to the main content",
-          "To provide shortcuts to different sections of the website",
-          "To help users skip unwanted sections like advertisements",
-          "To bypass broken links in the navigation",
-        ],
-        answer: "To skip over primary navigation to the main content",
+          "Which core React concept can increase the reusability of React components?",
+        options: ["JSX", "Classes", "Functions", "Props"],
+        answer: "Props",
       },
       {
-        question:
-          "Which of these tools can help in checking the accessibility of a website?",
+        question: "How do props work in React?",
         options: [
-          "W3C Validator",
-          "Google Lighthouse",
-          "CSS Validator",
-          "JavaScript Console",
+          "You can set props ('custom attributes') on components to automatically output them in the component's JSX code",
+          "You can set props ('custom attributes') on components to then extract & use them in the receiving component",
+          "You can set props ('custom attributes') on components which then receive them as automatically provided constants in the function body",
+          "You can set props ('custom attributes') on components which can then call a getProps() function to extract the received values",
         ],
-        answer: "Google Lighthouse",
+        answer:
+          "You can set props ('custom attributes') on components to then extract & use them in the receiving component",
       },
     ],
   },
